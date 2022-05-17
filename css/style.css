@@ -16,3 +16,7 @@
 .pergunta:hover button {
   text-decoration: underline;
 }
+
+.social {
+  max-width: 140px;
+}
