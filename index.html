@@ -13,6 +13,33 @@
 </head>
 
 <body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLoginTitulo">Entre na sua conta</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+            <p class="form-text mb-0">Esqueceu a senha? <a href="#">Clique aqui</a>.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <nav class="navbar navbar-expand-md bg-light sticky-md-top py-3 shadow-sm">
     <div class="container-fluid">
       <a href="#" class="navbar-brand"><img src="./img/caravan.svg" alt="Caravan"></a>
@@ -33,7 +60,11 @@
           </li>
           <li class="nav-item"><a href="planos.html" class="nav-link">Planos</a></li>
           <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+
+          <!-- Button trigger modal -->
+
+          <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal"
+              data-bs-target="#modalLogin">Login</a></li>
           <li class="nav-item"><a href="inscricao.html" class="btn btn-outline-primary ms-md-2">Inscreva-se</a></li>
         </ul>
       </div>
