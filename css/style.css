@@ -12,3 +12,7 @@
     font-size: 2.5rem;
   }
 }
+
+.pergunta:hover button {
+  text-decoration: underline;
+}
